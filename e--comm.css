@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background: #000046; 
+    background: -webkit-linear-gradient(to right, #000046, #1cb5e0); 
+    background: linear-gradient(to right, #000046, #1cb5e0); 
+}
+/* ++++++++++++++++++++++++++++HEADER================================== */
+header{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.logo--holo{
+    flex: 1;
+}   
+.icon--header{
+    justify-content: flex-end;
+}
+nav{
+    flex: 1;
+} 
+.logo--holo,
+.icon--header{
+    display: flex;
+} 
+.logo--hola{
+    width: 100px;
+}
+.logo--hola:hover{
+    opacity: 0.8;
+}
+h1.brand--name{
+    font-size: 44px;
+}
+h1.brand--name a{
+    text-decoration: none;
+    color: lightskyblue;
+}
+.search-1{
+    padding-right:20px;
+}
+.search-1{
+   font-size: 22px;
+    color: gray;
+}
+.search-2{
+    font-size: 22px;
+    color: gray;
+}
+.search-1:hover{
+    color: rgb(167, 157, 157);
+    cursor: pointer;
+}
+.search-2:hover{
+    color: rgb(167, 157, 157);
+    cursor: pointer;
+}
+.introduction--about--text{
+    min-height:80vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+}
+
+.cover img{
+    height:52vh;
+    animation: select--icon 2s ease-out;
+}
+@keyframes select--icon {
+    0% {
+       opacity: 0;
+       transform: translateY(-150px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.cover{
+    flex: 1;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.shoe--features{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    align-items: flex-start;
+}
+.introduction--about{
+    flex: 1;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+h2.name--product{
+    font-size: 50px;
+    color: rgb(165, 161, 161);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+h2.name--product:hover{
+    color: slategrey;
+}
+h2.name--product-1{
+    font-size: 50px;
+    color: steelblue;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    }
+h2.name--product-1:hover{
+    color: skyblue;
+}
+.introduction--about--text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.introduction--about--text p{
+  font-size: 20px;
+  width: 50%;
+  color: whitesmoke;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.introduction--about--text p:hover{
+    color: rgb(233, 229, 220);
+}
+h2.price--product{
+    font-size: 50px;
+    color: papayawhip;
+}
+.cta{
+    margin-top: 25px;
+}
+.cta--add{
+position: relative;
+display: inline-block;
+padding: 15px 25px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+border: none;
+background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);  border-radius: 15px;
+box-shadow: 0 9px rgb(224, 222, 222);
+}
+.cta--add:hover {
+    background: linear-gradient(90deg, #01c8ff 0%, #11153b 100%);  border-radius: 15px;
+    }
+
+.gradient-1{
+   position: absolute;
+   top:20%;
+   left: 38%;
+   z-index: -1;
+   opacity: 0.8;
+   animation: dropout 3s ease-in-out;
+}
+   @keyframes dropout {
+    0% {
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px );
+    }
+}
+.gradient-2{
+  position: absolute;
+  top: 20%;
+  left: -8%;
+  z-index: -1;
+  opacity: 0.6;
+  animation: dropout--out 2s ease-in;
+}
+@keyframes dropout--out {
+    0% {
+       opacity: 0;
+       transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.gradient-3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 33vh;
+}
+.gradient-4{
+    position: absolute;
+    top: 27%;
+    left: 36%;
+    z-index: -2;
+    transform: rotate(289deg);
+    opacity: 0.6;
+    animation:gradient4 2s ease-out;
+}
+@keyframes gradient4 {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+     }
+     100%{
+         opacity: 1;
+         transform: translateX(0px);
+     }
+}
+.cir-1{
+position: absolute;
+font-size: 2em;
+color: darkkhaki;
+left: 68%;
+top: 17%;
+}
+.cir-2{
+position: absolute;
+    font-size: 1.2em;
+    color: firebrick;
+    left: 40%;
+    top: 33%;
+}
+.cir-4{
+position: absolute;
+    font-size: 1.2em;
+    color: coral;
+    left: 55%;
+    top: 18%;
+}
+.cir-5{
+    position: absolute;
+    font-size: 1.2em;
+    color: #ececec6b;
+    left: 45%;
+    top: 38%;
+
+}
+.sq-1{
+    font-size: 2em;
+    color: indianred;
+    left: 22em;
+    top: -9em;
+    position: absolute;
+    transform: rotate(71deg);
+}
+.sq-2{
+    font-size: 1.4em;
+    color: khaki;
+    left: 16em;
+    top: -3em;
+    position: absolute;
+    transform: rotate(96deg);
+}
+.sq-3{
+    font-size: 2.2em;
+    color: tan;
+    left: 70%;
+    top: 70%;
+    position: absolute;
+    transform: rotate(223deg);
+}
+.down-2{
+    font-size: 2.6em;
+    color: darkturquoise;
+    left: 34%;
+    top: 58%;
+    position: absolute;
+    transform: rotate(322deg);
+}
+.time-1{
+    font-size: 2.6em;
+    color: #74EBD5;
+    left: 45%;
+    top: 82%;
+    position: absolute;
+    transform: rotate(322deg);
+}
+
+ .right--side{
+    display: flex;
+    width: 27%;
+    min-height: 80vh;
+    padding-right: 50px;
+    justify-content: flex-end;
+}
+.up-to-right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.icon--list{
+    line-height: 60px;
+}
+.facebook-1{
+    font-size: 1.4em;
+    color: white;
+}
+.facebook-1:hover{
+    color: gainsboro;
+}
+.twitter-1{
+    font-size: 1.4em;
+    color: white;
+}
+.twitter-1:hover{
+    color: gainsboro;
+}
+.line-right{
+    width: 0.2em;
+    height: 8em;
+    background-color: white;
+    position: absolute;
+    right: 4.2%;
+    top: 27%;
+}
+.share--share{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 48%;
+    right: 2.5%;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.line-right-1{
+    width: 0.2em;
+    height: 8em;
+    background-color: white;
+    position: absolute;
+    right: 4.2%;
+    top: 56%;
+}
+.top-dev{
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    right: 8%
+}
+.progress{
+    position: absolute;
+    background: rgb(204, 199, 199);
+    height: 1.6em;
+    width: 18em;
+    bottom: 80%;
+    right: 6%;
+    border-radius: 1em;
+}
+.progress:hover::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(16, 26, 165); */
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);    
+    border-radius: 1em;
+    animation: progressbar 3s ease-out;
+}
+@keyframes progressbar {
+    0% {
+       opacity: 0;
+       transform: translateX(0px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.arrow--2{
+    position: relative;
+    left: 131%;
+    top: -76%;
+    font-size: 22px;
+}
+.gradient-5{
+    z-index: -1;
+    height: 36%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    opacity: 0.3;
+}
+.fas{
+    animation: icon-animate 1.5s ease-out;
+}
+@keyframes icon-animate {
+    0% {
+       opacity: 0;
+       transform: translateY(-150px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+.gradient-6{
+    position: absolute;
+    top: 37%;
+    opacity: 0.3;
+    z-index: -2;
+    animation:whales 1s ease-out;
+}
+@keyframes whales{
+    0% {
+       opacity: 0;
+       transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}  
+.shoes-select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 10%;
+    bottom: 12%;
+    color: #fff;
+    animation: select--icon 3s ease-out;
+}
+@keyframes select--icon {
+    0% {
+       opacity: 0;
+       transform: translateY(-150px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.dot-1{
+    font-size: 22px;
+    color: white;
+}
+.dot-2{
+    font-size: 22px;
+    color: slateblue;
+}
+
+@media screen and (max-width:1024px) {
+    .main{
+        flex-direction: column;
+    }
+    .logo--hola{
+        width: 50px;
+        flex:0;
+    }
+    .introduction--about{
+        padding: 0px 55px;
+        text-align: center;
+        }
+    h2.name--product{
+        font-size: 30px;
+        width: 218px;
+        display: inline;
+        }
+    h2.name--product-1{
+        font-size: 35px;
+        width: 190px;
+        padding-left: 15px;
+    }
+    h2.price--product{
+        padding: 0 42px;
+    }
+    .introduction--about--text p{
+        display: none;
+    }
+    .cta--add{
+        padding: 12px 8px 13px 8px;
+        position: absolute;
+        bottom: 79px;
+        left: 112px;
+    }
+    .progress{
+        display: none;
+    }
+    .shoes-select{
+        position: absolute;
+        left: 182px;
+        letter-spacing: 45px;
+        bottom: 2%;    
+    }
+    .right--side{
+        display: none;
+    }
+    .cover img{
+        height: 28vh;
+        position: absolute;
+        left: 75px;
+        top:266px
+        }
+   .de--decor{
+       z-index: -2;
+   }
+    .gradient-1{
+        height:36vh;       
+        position: absolute;
+        left: 78px;
+        top: 253px;
+        }
+    .gradient-2{
+        height: 20vh;
+        z-index: -1;
+        position: absolute;
+        top: 574px;
+    }
+    .gradient-5 {
+         height: 23%;
+        position: absolute;
+        bottom: 153px;
+    }
+    .gradient-3{
+        z-index: -2;
+    }
+    .gradient-4{
+        display: none;
+    }
+    .gradient-6{
+        display: none;
+    }
+}
+
